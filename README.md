@@ -26,14 +26,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+.map will return a new array, and foreach will iterate over each item in the array not returning the new array.
+
+
 
 2. Explain the difference between a callback and a higher order function.
+A higher order function is a function taht will return a function, or take a function as an arguement. 
+A callback is a function that will we usually give to some other function so that when we run it, something will happen. 
 
 3. What is closure?
+A function that will remember its outer variables or parameters and will be able to access them. A function inside a function, the inner function being able to access the outter functions variables, or parameters essentially.
 
 4. Describe the four rules of the 'this' keyword.
+-When you use the new keyword while calling a function then 'this' will create that new object inside the function. Essentially the value of this inside that function will be the 'window' object.
+-When we use apply() call() or bind() to call a function 'this' inside the function is the object that is passed in as the arg. It'll be called by the preceding dot, the object before that dot is 'this'.
+-If we invoke our function with dotnoation to call the method then 'this' is the object that the function is a property to. This will be preceding to the left of the dot of what ever method you're calling, or function. This will always be the object. 
+-This is the global object while we're in non-strict mode, and undefined while in strict mode. While we're in a browser it'll be the windows object. 
 
 5. Why do we need super() in an extended class?
+When we extend a class the constructor in our child class(subclass) needs to call the constructor in the parent class(Super class) so that the fields in the parent class get initialized.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
