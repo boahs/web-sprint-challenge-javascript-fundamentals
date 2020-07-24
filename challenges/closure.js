@@ -18,7 +18,25 @@ myFunction();
 
 // Explanation: 
 
+// Because this function is a closure, that's why. A closure is where a function is defined inside another function, and
+// inner function can access the local variables, and parameters defined in the local scope of the outer function. The inner
+// function will have access as it needs them too, even after the outer function has finished executing. 
+
 
 /* Task 2: Counter */
 
-/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+/* Create a function called `summation` that accepts a parameter and uses a counter to return the 
+summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function summation(something){
+  outterCounter = 0;
+  return function addOutter(){
+    for (let i=1; i<something; i++){
+      outterCounter += i;
+    }
+    return outterCounter
+  }
+}
+
+const solution = summation(5);
+
