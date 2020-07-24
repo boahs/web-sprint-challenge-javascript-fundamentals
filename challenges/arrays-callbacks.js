@@ -88,17 +88,13 @@ const multiply = (a,b) => a * b;
 const greeting = (a,b) => `Hello ${a} ${b}, nice to meet you!`;
 
 
-/* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+// Step 3: Check your work by un-commenting the following calls to consume(): 
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
+// Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+//done above already
 
-
-/*
-
-Stretch: If you haven't already, convert your array method callbacks into arrow functions.
-
-*/
 
